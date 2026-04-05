@@ -1,0 +1,89 @@
+<div class="column-layout catalog-main-container">
+  <div class="row-layout catalog-header-actions">
+    <div class="column-layout catalog-title-desc">
+      <h3 class="catalog-view-title">
+        Your Skin Catalog
+      </h3>
+      <p class="catalog-view-description">
+        Browse, filter, and manage all your CS2 skins.
+      </p>
+    </div>
+    <div class="row-layout catalog-buttons">
+      <button igxButton="contained" type="button" class="add-skin-from-catalog">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Add New Skin</span>
+      </button>
+    </div>
+  </div>
+  <div class="row-layout filter-search-section">
+    <igx-input-group type="search" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon-1xnu-7a">
+          search
+        </igx-icon>
+      </igx-prefix>
+      <input type="search" [(ngModel)]="value" placeholder="Search skin name..." igxInput />
+      <label igxLabel>Search</label>
+    </igx-input-group>
+    <igx-select type="border" placeholder="Filter by Weapon" class="user-input">
+      <igx-select-item value="AK-47">
+        AK-47
+      </igx-select-item>
+      <igx-select-item value="M4A4">
+        M4A4
+      </igx-select-item>
+      <igx-select-item value="AWP">
+        AWP
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="border" placeholder="Filter by Collection" class="user-input">
+      <igx-select-item value="Dust II">
+        Dust II
+      </igx-select-item>
+      <igx-select-item value="Cache">
+        Cache
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="border" placeholder="Filter by Rarity" class="user-input">
+      <igx-select-item value="Covert">
+        Covert
+      </igx-select-item>
+      <igx-select-item value="Classified">
+        Classified
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="border" placeholder="Filter by Wear" class="user-input">
+      <igx-select-item value="Factory New">
+        Factory New
+      </igx-select-item>
+      <igx-select-item value="Minimal Wear">
+        Minimal Wear
+      </igx-select-item>
+    </igx-select>
+    <igx-input-group type="box" class="user-input">
+      <input type="number" [ngModel]="value1" placeholder="Float Min" igxInput (ngModelChange)="value1 = stringToNumber($event)" />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input">
+      <input type="number" [ngModel]="value2" placeholder="Float Max" igxInput (ngModelChange)="value2 = stringToNumber($event)" />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+    <button igxButton="outlined" type="button" class="add-skin-from-catalog">
+      Reset Filters
+    </button>
+  </div>
+  <igc-grid-lite [data]="northwindEmployees" class="skins-grid">
+    <igc-grid-lite-column field="imageUrl" header="Image" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="skinName" header="Skin Name" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="weapon" header="Weapon" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="collection" header="Collection" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="rarity" header="Rarity" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="wear" header="Wear" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="floatMin" header="Float (Min)" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="floatMax" header="Float (Max)" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="overpayReason" header="Overpay Reason" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    <igc-grid-lite-column field="actions" header="Actions" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+  </igc-grid-lite>
+</div>

@@ -1,0 +1,120 @@
+<div class="column-layout dashboard-content">
+  <div class="column-layout dashboard-header">
+    <h3 class="content">
+      Your CS2 Skin Catalog Overview
+    </h3>
+    <p class="dashboard-subtitle">
+      Quick insights and recent additions to your collection.
+    </p>
+  </div>
+  <div class="row-layout dashboard-metrics">
+    <igx-card class="total-skins-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="total-skins-icon total-skins-icon_1">
+            <igx-icon class="icon">
+              inventory
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Total Skins
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout total-skins-content">
+          <h3 class="content">
+            0
+          </h3>
+          <p class="ig-typography__body-2 dashboard-subtitle">
+            In your catalog
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="total-skins-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="unique-collections-icon unique-collections-icon_1">
+            <igx-icon class="icon_1">
+              collections_bookmark
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Unique Collections
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout total-skins-content">
+          <h3 class="content">
+            0
+          </h3>
+          <p class="ig-typography__body-2 dashboard-subtitle">
+            Represented
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="total-skins-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="overpay-skins-icon overpay-skins-icon_1">
+            <igx-icon class="icon_2">
+              attach_money
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Overpay Reasons
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout total-skins-content">
+          <h3 class="content">
+            0
+          </h3>
+          <p class="ig-typography__body-2 dashboard-subtitle">
+            Items with specific overpay reason
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+  <div class="column-layout rarity-distribution-chart">
+    <h5 class="content">
+      Skins by Rarity
+    </h5>
+    <igx-pie-chart [dataSource]="financialBoxOfficeRevenue" labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" class="rarity-pie-chart"></igx-pie-chart>
+  </div>
+  <div class="column-layout rarity-distribution-chart">
+    <h5 class="content">
+      Skins by Wear
+    </h5>
+    <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" computedPlotAreaMarginMode="series" class="wear-category-chart"></igx-category-chart>
+  </div>
+  <div class="column-layout recent-skins-section">
+    <div class="row-layout recent-skins-header">
+      <h5 class="content">
+        Recently Added Skins
+      </h5>
+      <button igxButton="contained" type="button" class="add-new-skin-button">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Add New Skin</span>
+      </button>
+    </div>
+    <div class="row-layout recent-skins-cards">
+      <p class="dashboard-subtitle">
+        No skins added yet. Add your first skin!
+      </p>
+    </div>
+  </div>
+</div>

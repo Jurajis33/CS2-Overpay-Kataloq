@@ -1,0 +1,106 @@
+:host {
+  height: 100%;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.stats-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 40px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.stats-header {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.stats-main-charts {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.stats-rarity-chart {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 360px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.stats-overpay-table {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.content {
+  color: var(--ig-surface-900-contrast);
+  height: max-content;
+  min-width: min-content;
+}
+.stats-subtitle {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.stats-collection-apex-chart {
+  min-width: 400px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.stats-rarity-pie-chart {
+  min-width: 250px;
+  min-height: 250px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.stats-wear-category-chart {
+  min-width: 400px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.overpay-reasons-grid {
+  min-width: 400px;
+  min-height: 220px;
+  flex-grow: 1;
+  flex-basis: 0;
+}

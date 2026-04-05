@@ -1,0 +1,39 @@
+<div class="column-layout stats-container">
+  <div class="column-layout stats-header">
+    <h3 class="content">
+      Catalog Statistics
+    </h3>
+    <p class="stats-subtitle">
+      Detailed breakdown of your CS2 skin collection.
+    </p>
+  </div>
+  <div class="row-layout stats-main-charts">
+    <div class="column-layout stats-rarity-chart">
+      <h5 class="content">
+        Skins by Rarity
+      </h5>
+      <igx-pie-chart [dataSource]="financialBoxOfficeRevenue" labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" class="stats-rarity-pie-chart"></igx-pie-chart>
+    </div>
+    <div class="column-layout stats-rarity-chart">
+      <h5 class="content">
+        Skins by Wear
+      </h5>
+      <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" computedPlotAreaMarginMode="series" class="stats-wear-category-chart"></igx-category-chart>
+    </div>
+    <div class="column-layout stats-rarity-chart">
+      <h5 class="content">
+        Skins by Collection
+      </h5>
+      <apx-chart [series]="series" [chart]="chart" [plotOptions]="plotOptions" [theme]="theme" [legend]="legend" [markers]="markers" [dataLabels]="dataLabels" class="stats-collection-apex-chart"></apx-chart>
+    </div>
+  </div>
+  <div class="column-layout stats-overpay-table">
+    <h5 class="content">
+      Skins by Overpay Reason
+    </h5>
+    <igc-grid-lite [data]="northwindEmployees" class="overpay-reasons-grid">
+      <igc-grid-lite-column field="reason" header="Reason" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+      <igc-grid-lite-column field="count" header="Count" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+    </igc-grid-lite>
+  </div>
+</div>

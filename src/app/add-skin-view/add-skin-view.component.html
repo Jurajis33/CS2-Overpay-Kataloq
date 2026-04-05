@@ -1,0 +1,149 @@
+<div class="column-layout add-skin-container">
+  <div class="column-layout add-skin-header">
+    <h3 class="content">
+      Add New CS2 Skin
+    </h3>
+    <p class="add-skin-subtitle">
+      Fill in the details for your new skin entry.
+    </p>
+  </div>
+  <form class="column-layout add-skin-form">
+    <div class="column-layout required-fields-section">
+      <h6 class="content">
+        Required Information
+      </h6>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [(ngModel)]="value" placeholder="e.g., AK-47 | Case Hardened" required="true" igxInput #igxInput />
+        <label igxLabel>Skin Name</label>
+        @if (igxInput.validity.valueMissing) {
+          <igx-hint>sample hint text</igx-hint>
+        }
+      </igx-input-group>
+      <igx-select type="border" placeholder="Select Weapon" required="true" class="user-input">
+        <igx-select-item value="AK-47">
+          AK-47
+        </igx-select-item>
+        <igx-select-item value="M4A4">
+          M4A4
+        </igx-select-item>
+        <igx-select-item value="AWP">
+          AWP
+        </igx-select-item>
+        <igx-select-item value="Desert Eagle">
+          Desert Eagle
+        </igx-select-item>
+        <label igxLabel>Weapon</label>
+        <igx-hint>sample hint text</igx-hint>
+      </igx-select>
+      <igx-select type="border" placeholder="Select Collection" required="true" class="user-input">
+        <igx-select-item value="Dust II Collection">
+          Dust II Collection
+        </igx-select-item>
+        <igx-select-item value="Cache Collection">
+          Cache Collection
+        </igx-select-item>
+        <igx-select-item value="Gamma Case">
+          Gamma Case
+        </igx-select-item>
+        <label igxLabel>Collection</label>
+        <igx-hint>sample hint text</igx-hint>
+      </igx-select>
+      <igx-select type="border" placeholder="Select Rarity" required="true" class="user-input">
+        <igx-select-item value="Consumer Grade">
+          Consumer Grade
+        </igx-select-item>
+        <igx-select-item value="Industrial Grade">
+          Industrial Grade
+        </igx-select-item>
+        <igx-select-item value="Mil-Spec">
+          Mil-Spec
+        </igx-select-item>
+        <igx-select-item value="Restricted">
+          Restricted
+        </igx-select-item>
+        <igx-select-item value="Classified">
+          Classified
+        </igx-select-item>
+        <igx-select-item value="Covert">
+          Covert
+        </igx-select-item>
+        <igx-select-item value="Contraband">
+          Contraband
+        </igx-select-item>
+        <label igxLabel>Rarity</label>
+        <igx-hint>sample hint text</igx-hint>
+      </igx-select>
+      <igx-select type="border" placeholder="Select Wear" required="true" class="user-input">
+        <igx-select-item value="Factory New">
+          Factory New
+        </igx-select-item>
+        <igx-select-item value="Minimal Wear">
+          Minimal Wear
+        </igx-select-item>
+        <igx-select-item value="Field-Tested">
+          Field-Tested
+        </igx-select-item>
+        <igx-select-item value="Well-Worn">
+          Well-Worn
+        </igx-select-item>
+        <igx-select-item value="Battle-Scarred">
+          Battle-Scarred
+        </igx-select-item>
+        <label igxLabel>Wear</label>
+        <igx-hint>sample hint text</igx-hint>
+      </igx-select>
+    </div>
+    <div class="column-layout required-fields-section">
+      <h6 class="content">
+        Optional Details
+      </h6>
+      <div class="row-layout float-values">
+        <igx-input-group type="border" class="float-min-input">
+          <input type="number" [ngModel]="value1" placeholder="e.g., 0.00" igxInput (ngModelChange)="value1 = stringToNumber($event)" />
+          <label igxLabel>Float Min</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="float-min-input">
+          <input type="number" [ngModel]="value2" placeholder="e.g., 1.00" igxInput (ngModelChange)="value2 = stringToNumber($event)" />
+          <label igxLabel>Float Max</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="float-min-input">
+          <input type="number" [ngModel]="value3" placeholder="e.g., 0.00123" igxInput (ngModelChange)="value3 = stringToNumber($event)" />
+          <label igxLabel>Exact Float</label>
+        </igx-input-group>
+      </div>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [(ngModel)]="value4" placeholder="e.g., Pattern, Low Float" igxInput />
+        <label igxLabel>Overpay Reason</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <label igxLabel>Description</label>
+        <textarea placeholder="Detailed description of the skin..." igxInput></textarea>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <label igxLabel>Notes</label>
+        <textarea placeholder="Personal notes about the skin..." igxInput></textarea>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [(ngModel)]="value5" placeholder="Comma-separated tags (e.g., rare, pattern, trade)" igxInput />
+        <label igxLabel>Tags</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [(ngModel)]="value6" placeholder="Paste image URL here" igxInput />
+        <label igxLabel>Image URL</label>
+      </igx-input-group>
+      <button igxButton="outlined" type="button" class="upload-image-button">
+        <igx-icon>
+          upload
+        </igx-icon>
+        <span>Upload Image (Coming Soon)</span>
+      </button>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [(ngModel)]="value7" placeholder="e.g., CSFloat URL, Steam Market" igxInput />
+        <label igxLabel>External Link</label>
+      </igx-input-group>
+    </div>
+    <button igxButton="contained" type="button" class="submit-skin-button">
+      Add Skin to Catalog
+    </button>
+  </form>
+</div>

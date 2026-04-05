@@ -1,0 +1,50 @@
+<igx-navbar class="cs2-navigation-bar">
+  <igx-navbar-action>
+    <button igxIconButton="flat">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      CS2 Skin Catalog
+    </h6>
+  </igx-navbar-title>
+  <button igxIconButton="flat">
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat">
+    <igx-icon>
+      add
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat">
+    <igx-icon>
+      settings
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout app-content-area">
+  <igx-nav-drawer [pinThreshold]="stringToNumber('0')" width="320px" class="cs2-navigation-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem>
+        <span>Dashboard</span>
+      </div>
+      <div igxDrawerItem>
+        <span>Catalog</span>
+      </div>
+      <div igxDrawerItem>
+        <span>Add New Skin</span>
+      </div>
+      <div igxDrawerItem>
+        <span>Statistics</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="main-view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

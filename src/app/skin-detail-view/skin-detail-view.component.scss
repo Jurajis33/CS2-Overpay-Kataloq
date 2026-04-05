@@ -1,0 +1,170 @@
+:host {
+  height: 100%;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.skin-detail-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 40px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.skin-detail-header {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.skin-detail-title-section {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.detail-actions {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.detail-main-content {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.detail-image-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 320px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.detail-info-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 320px;
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.basic-info-card {
+  --background: var(--ig-surface-800);
+  height: max-content;
+  min-width: 320px;
+  max-width: 576px;
+}
+.basic-info-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.rarity-wear-row {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.detail-tags-row {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  color: var(--ig-surface-900-contrast);
+  height: max-content;
+  min-width: min-content;
+}
+.detail-weapon-collection {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.skin-image-detail {
+  object-fit: cover;
+  border-radius: 8px;
+  min-width: 0;
+  min-height: 0;
+  flex-shrink: 0;
+}
+.external-link-view {
+  color: var(--ig-primary-500);
+  cursor: pointer;
+  height: max-content;
+  min-width: min-content;
+}
+.tag-chip-placeholder {
+  --ig-size: var(--ig-size-small);
+  width: max-content;
+  height: max-content;
+}
+.icon {
+  --size: 18px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.edit-skin-button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.rarity-badge {
+  width: max-content;
+  height: max-content;
+}

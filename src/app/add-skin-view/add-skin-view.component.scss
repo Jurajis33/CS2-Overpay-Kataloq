@@ -1,0 +1,97 @@
+:host {
+  height: 100%;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.add-skin-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 40px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.add-skin-header {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.required-fields-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.float-values {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  color: var(--ig-surface-900-contrast);
+  height: max-content;
+  min-width: min-content;
+}
+.add-skin-subtitle {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.add-skin-form {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.user-input {
+  height: max-content;
+  min-width: min-content;
+}
+.float-min-input {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.upload-image-button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.submit-skin-button {
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+}

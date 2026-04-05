@@ -1,0 +1,50 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.cs2-navigation-bar {
+  --igx-navbar-text-color: var(--ig-surface-900-contrast);
+  --igx-navbar-background: var(--ig-surface-900);
+  z-index: 1;
+  position: sticky;
+  height: max-content;
+  min-width: min-content;
+}
+.cs2-navigation-drawer {
+  min-width: min-content;
+  min-height: 0;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+.main-view-container {
+  overflow: auto;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.h6 {
+  margin: 0;
+}
+.row-layout {
+  display: flex;
+}
+.app-content-area {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
